@@ -22,7 +22,7 @@ ns = api.namespace('predict', description='Predicción de popularidad')
 # Parser para recibir los 14 parámetros
 parser = reqparse.RequestParser()
 parser.add_argument('duration_ms', type=float, required=True)
-parser.add_argument('explicit', type=int, required=True)
+parser.add_argument('explicit', type=bool, required=True)
 parser.add_argument('danceability', type=float, required=True)
 parser.add_argument('energy', type=float, required=True)
 parser.add_argument('key', type=int, required=True)
